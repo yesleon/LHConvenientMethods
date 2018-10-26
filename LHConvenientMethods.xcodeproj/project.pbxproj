@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		710F8D10218305E100E4C022 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7146A5F22181CB77009F7F1F /* LHConvenientMethods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LHConvenientMethods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7146A5F52181CB77009F7F1F /* LHConvenientMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHConvenientMethods.h; sourceTree = "<group>"; };
 		7146A5F62181CB77009F7F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		7146A5E82181CB77009F7F1F = {
 			isa = PBXGroup;
 			children = (
+				710F8D10218305E100E4C022 /* README.md */,
 				7146A5F42181CB77009F7F1F /* LHConvenientMethods */,
 				7146A5F32181CB77009F7F1F /* Products */,
 			);
