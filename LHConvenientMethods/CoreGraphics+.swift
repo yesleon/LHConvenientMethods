@@ -19,6 +19,10 @@ public extension CGPoint {
         return CGPoint(x: x + vector.dx, y: y + vector.dy)
     }
     
+    static func *(lhs: CGPoint, rhs: CGFloat) -> CGPoint {
+        return CGPoint(x: lhs.x * rhs, y: lhs.y * rhs)
+    }
+    
 }
 
 public extension CGVector {
