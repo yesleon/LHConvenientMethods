@@ -51,4 +51,16 @@ public extension CGSize {
         return CGSize(width: lhs.width * rhs, height: lhs.height * rhs)
     }
     
+    func aspectRatio() -> CGFloat {
+        return width / height
+    }
+    
+}
+
+public extension CGRect {
+    
+    func aspectRatio() -> CGFloat {
+        return size.aspectRatio()
+    }
+    
 }
