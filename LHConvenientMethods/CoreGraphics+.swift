@@ -69,7 +69,7 @@ public extension CGRect {
     
 }
 
-extension UIEdgeInsets {
+public extension UIEdgeInsets {
     init(containing: CGRect, contained: CGRect) {
         self.init(top: contained.minY - containing.minY,
                   left: contained.minX - containing.minX,
@@ -87,4 +87,4 @@ extension UIEdgeInsets {
     }
 }
 
-typealias CGScale = CGSize
+public typealias CGScale = CGSize
