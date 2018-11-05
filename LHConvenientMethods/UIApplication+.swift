@@ -25,6 +25,16 @@ extension UIApplication {
         }
     }
     
+    public func presentAlertController(_ alertController: UIAlertController) {
+        let undoWindow = UIWindow()
+        undoWindow.backgroundColor = nil
+        undoWindow.tintColor = keyWindow?.tintColor
+        let rootVC = UIViewController()
+        undoWindow.rootViewController = rootVC
+        undoWindow.makeKeyAndVisible()
+        rootVC.present(alertController, animated: true)
+    }
+    
 }
 
 extension UIResponder {
