@@ -35,6 +35,38 @@ extension UIApplication {
         rootVC.present(alertController, animated: true)
     }
     
+    public func presentUndoAlert(with undoManager: UndoManager) {
+        let cancelString = NSLocalizedString("Cancel", comment: "")
+        let undoString = NSLocalizedString("Undo", comment: "")
+        let redoString = NSLocalizedString("Redo", comment: "")
+        
+        let undoVC = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: cancelString, style: .cancel)
+        func addAction(alertTitle: String?, actionTitle: String, handler: @escaping () -> Void) {
+            if let alertTitle = alertTitle {
+                undoVC.title = alertTitle
+            }
+            undoVC.addAction(.init(title: actionTitle, style: .default, handler: { action in
+                handler()
+            }))
+        }
+        switch (undoManager.canUndo, undoManager.canRedo) {
+        case (true, false):
+            undoVC.addAction(cancelAction)
+            addAction(alertTitle: undoManager.undoMenuItemTitle, actionTitle: undoString, handler: undoManager.undo)
+        case (false, true):
+            undoVC.addAction(cancelAction)
+            addAction(alertTitle: undoManager.redoMenuItemTitle, actionTitle: redoString, handler: undoManager.redo)
+        case (true, true):
+            addAction(alertTitle: undoManager.undoMenuItemTitle, actionTitle: undoString, handler: undoManager.undo)
+            addAction(alertTitle: nil, actionTitle: undoManager.redoMenuItemTitle, handler: undoManager.redo)
+            undoVC.addAction(cancelAction)
+        case (false, false):
+            return
+        }
+        presentAlertController(undoVC)
+    }
+    
 }
 
 extension UIResponder {
