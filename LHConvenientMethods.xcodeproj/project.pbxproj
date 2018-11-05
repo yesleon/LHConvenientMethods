@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		71129318218EE29400FAE813 /* UIScrollView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71129317218EE29400FAE813 /* UIScrollView+.swift */; };
+		713047CA2190A0D50066F7B1 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713047C92190A0D50066F7B1 /* UIApplication+.swift */; };
 		7146A5F72181CB77009F7F1F /* LHConvenientMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 7146A5F52181CB77009F7F1F /* LHConvenientMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7146A6092181CB84009F7F1F /* UIWindow+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7146A6032181CB82009F7F1F /* UIWindow+.swift */; };
 		7146A60A2181CB84009F7F1F /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7146A6042181CB82009F7F1F /* UITableViewCell+.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		710F8D10218305E100E4C022 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		71129317218EE29400FAE813 /* UIScrollView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+.swift"; sourceTree = "<group>"; };
+		713047C92190A0D50066F7B1 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		7146A5F22181CB77009F7F1F /* LHConvenientMethods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LHConvenientMethods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7146A5F52181CB77009F7F1F /* LHConvenientMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHConvenientMethods.h; sourceTree = "<group>"; };
 		7146A5F62181CB77009F7F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				7146A6032181CB82009F7F1F /* UIWindow+.swift */,
+				713047C92190A0D50066F7B1 /* UIApplication+.swift */,
 				71129317218EE29400FAE813 /* UIScrollView+.swift */,
 				716B021C2188366D0030C963 /* UIPopoverController+.swift */,
 				7146A6062181CB83009F7F1F /* UIImageView+.swift */,
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713047CA2190A0D50066F7B1 /* UIApplication+.swift in Sources */,
 				7146A60C2181CB84009F7F1F /* UIImageView+.swift in Sources */,
 				7146A60E2181CB84009F7F1F /* CGImage+.swift in Sources */,
 				7146A6092181CB84009F7F1F /* UIWindow+.swift in Sources */,
