@@ -15,6 +15,8 @@ extension UIPageViewController {
             setToolbarItems(childVC.toolbarItems, animated: animated)
             navigationItem.setLeftBarButtonItems(childVC.navigationItem.leftBarButtonItems, animated: animated)
             navigationItem.setRightBarButtonItems(childVC.navigationItem.rightBarButtonItems, animated: animated)
+            navigationItem.titleView = childVC.navigationItem.titleView
+            navigationItem.title = childVC.navigationItem.title
         }
     }
     
