@@ -12,17 +12,11 @@ extension UIApplication {
     
     public var firstResponder: UIResponder? {
         var firstResponder: UIResponder?
-        let semaphore = DispatchSemaphore(value: 0)
         let reportHandler: FirstResponderReportHandler = { responder in
             firstResponder = responder
-            semaphore.signal()
         }
-        if sendAction(#selector(UIResponder.reportAsFirstResponder), to: nil, from: reportHandler, for: nil) {
-            semaphore.wait()
-            return firstResponder
-        } else {
-            return nil
-        }
+        sendAction(#selector(UIResponder.reportAsFirstResponder), to: nil, from: reportHandler, for: nil)
+        return firstResponder
     }
     
     public func presentAlertController(_ alertController: UIAlertController) {
