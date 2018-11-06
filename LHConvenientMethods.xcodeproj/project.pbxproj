@@ -18,6 +18,7 @@
 		7146A60E2181CB84009F7F1F /* CGImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7146A6082181CB84009F7F1F /* CGImage+.swift */; };
 		7153444921868B9100EE8AC0 /* CoreGraphics+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153444821868B9100EE8AC0 /* CoreGraphics+.swift */; };
 		716B021D2188366D0030C963 /* UIPopoverController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716B021C2188366D0030C963 /* UIPopoverController+.swift */; };
+		71E06C0E2191354300394C9F /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E06C0D2191354300394C9F /* UIAlertController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		7146A6082181CB84009F7F1F /* CGImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+.swift"; sourceTree = "<group>"; };
 		7153444821868B9100EE8AC0 /* CoreGraphics+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+.swift"; sourceTree = "<group>"; };
 		716B021C2188366D0030C963 /* UIPopoverController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPopoverController+.swift"; sourceTree = "<group>"; };
+		71E06C0D2191354300394C9F /* UIAlertController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			children = (
 				7146A6032181CB82009F7F1F /* UIWindow+.swift */,
 				713047C92190A0D50066F7B1 /* UIApplication+.swift */,
+				71E06C0D2191354300394C9F /* UIAlertController+.swift */,
 				71129317218EE29400FAE813 /* UIScrollView+.swift */,
 				716B021C2188366D0030C963 /* UIPopoverController+.swift */,
 				7146A6062181CB83009F7F1F /* UIImageView+.swift */,
@@ -173,6 +176,7 @@
 				716B021D2188366D0030C963 /* UIPopoverController+.swift in Sources */,
 				7146A60D2181CB84009F7F1F /* UICollectionViewCell+.swift in Sources */,
 				7146A60B2181CB84009F7F1F /* UIPageViewController+.swift in Sources */,
+				71E06C0E2191354300394C9F /* UIAlertController+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
