@@ -18,4 +18,10 @@ extension UIPageViewController {
         }
     }
     
+    public func reloadData() {
+        let dataSource = self.dataSource
+        self.dataSource = nil
+        self.dataSource = dataSource
+    }
+    
 }
