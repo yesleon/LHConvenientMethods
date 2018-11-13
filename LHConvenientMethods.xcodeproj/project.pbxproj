@@ -20,6 +20,7 @@
 		7146A60E2181CB84009F7F1F /* CGImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7146A6082181CB84009F7F1F /* CGImage+.swift */; };
 		7153444921868B9100EE8AC0 /* CoreGraphics+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153444821868B9100EE8AC0 /* CoreGraphics+.swift */; };
 		716B021D2188366D0030C963 /* UIPopoverController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716B021C2188366D0030C963 /* UIPopoverController+.swift */; };
+		717BA6DA219AA2E200CCDDD9 /* Optional+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717BA6D9219AA2E200CCDDD9 /* Optional+.swift */; };
 		71BC387821940333005A7FA4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC387721940333005A7FA4 /* UIView+.swift */; };
 		71E06C0E2191354300394C9F /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E06C0D2191354300394C9F /* UIAlertController+.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 		7146A6082181CB84009F7F1F /* CGImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+.swift"; sourceTree = "<group>"; };
 		7153444821868B9100EE8AC0 /* CoreGraphics+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+.swift"; sourceTree = "<group>"; };
 		716B021C2188366D0030C963 /* UIPopoverController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPopoverController+.swift"; sourceTree = "<group>"; };
+		717BA6D9219AA2E200CCDDD9 /* Optional+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+.swift"; sourceTree = "<group>"; };
 		71BC387721940333005A7FA4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		71E06C0D2191354300394C9F /* UIAlertController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				71129317218EE29400FAE813 /* UIScrollView+.swift */,
 				716B021C2188366D0030C963 /* UIPopoverController+.swift */,
 				7146A6062181CB83009F7F1F /* UIImageView+.swift */,
+				717BA6D9219AA2E200CCDDD9 /* Optional+.swift */,
 				7146A6082181CB84009F7F1F /* CGImage+.swift */,
 				711EA80121998AA000DC0103 /* UIBarButtonItem+.swift */,
 				7153444821868B9100EE8AC0 /* CoreGraphics+.swift */,
@@ -185,6 +188,7 @@
 				71129318218EE29400FAE813 /* UIScrollView+.swift in Sources */,
 				7153444921868B9100EE8AC0 /* CoreGraphics+.swift in Sources */,
 				713B0E912194B920001B7025 /* Declarative.swift in Sources */,
+				717BA6DA219AA2E200CCDDD9 /* Optional+.swift in Sources */,
 				716B021D2188366D0030C963 /* UIPopoverController+.swift in Sources */,
 				7146A60D2181CB84009F7F1F /* UICollectionViewCell+.swift in Sources */,
 				7146A60B2181CB84009F7F1F /* UIPageViewController+.swift in Sources */,
