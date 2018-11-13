@@ -18,10 +18,6 @@ extension Declarative {
         handler(self)
     }
     
-    public func bond<T>(with target: T, handler: @escaping (Self, T) -> Void) {
-        handler(self, target)
-    }
-    
     public mutating func modify(handler: @escaping (inout Self) -> Void) {
         handler(&self)
     }
