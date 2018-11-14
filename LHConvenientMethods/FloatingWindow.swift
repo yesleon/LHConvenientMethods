@@ -37,8 +37,26 @@ extension UIViewController {
         return nil
     }
     
-    open func setNeedsFloatingWindowAppearanceUpdate() {
+    @objc open func setNeedsFloatingWindowAppearanceUpdate() {
         NotificationCenter.default.post(name: floatingWindowAppearanceNeedsUpdate, object: nil)
+    }
+    
+    @objc open var childForFloatingWindowEvents: UIViewController? {
+        return nil
+    }
+    
+    @objc open var canHandleFloatingWindowEvents: Bool {
+        if let child = childForFloatingWindowEvents {
+            return child.canHandleFloatingWindowEvents
+        } else {
+            return false
+        }
+    }
+    
+    @objc open func handleFloatingWindowEvents(_ sender: UIView) {
+        if let child = childForFloatingWindowEvents {
+            child.handleFloatingWindowEvents(sender)
+        }
     }
     
 }
@@ -53,11 +71,23 @@ extension UINavigationController {
         return topViewController
     }
     
+    override open var childForFloatingWindowEvents: UIViewController? {
+        return topViewController
+    }
+    
 }
 
 extension UIPageViewController {
     
+    open override var childForFloatingWindowHidden: UIViewController? {
+        return viewControllers?.first
+    }
+    
     open override var childForSafeArea: UIViewController? {
+        return viewControllers?.first
+    }
+    
+    override open var childForFloatingWindowEvents: UIViewController? {
         return viewControllers?.first
     }
     
@@ -65,7 +95,15 @@ extension UIPageViewController {
 
 extension UITabBarController {
     
+    open override var childForFloatingWindowHidden: UIViewController? {
+        return selectedViewController
+    }
+    
     open override var childForSafeArea: UIViewController? {
+        return selectedViewController
+    }
+    
+    override open var childForFloatingWindowEvents: UIViewController? {
         return selectedViewController
     }
     
@@ -85,7 +123,9 @@ extension UIApplication {
             if newValue {
                 guard floatingWindow == nil else { return }
                 let floatingVC = FloatingViewController()
-                FloatingWindow(floatingVC: floatingVC).persistAndShow()
+                let window = FloatingWindow(floatingVC: floatingVC)
+                window.floatingVC.button.addTarget(self, action: #selector(didPressFloatingWindowButton), for: .touchUpInside)
+                window.persistAndShow()
                 NotificationCenter.default.addObserver(self, selector: #selector(updateFloatingWindowAppearance), name: floatingWindowAppearanceNeedsUpdate, object: nil)
                 
             } else {
@@ -97,14 +137,20 @@ extension UIApplication {
     }
     
     @objc func updateFloatingWindowAppearance() {
+        guard let window = floatingWindow else { return }
+        window.tintColor = keyWindow?.tintColor
         guard var topVC = keyWindow?.topViewController else { return }
         if topVC.isBeingDismissed, let presentingViewController = topVC.presentingViewController {
             topVC = presentingViewController
         }
-        guard let floatingVC = floatingWindow?.floatingVC else { return }
-        
-        floatingVC.connect(with: topVC)
-        
+        window.floatingVC.connect(with: topVC)
+    }
+    
+    @objc func didPressFloatingWindowButton(_ sender: UIButton) {
+        guard let topVC = keyWindow?.topViewController else { return }
+        if topVC.canHandleFloatingWindowEvents {
+            topVC.handleFloatingWindowEvents(sender)
+        }
     }
     
 }
@@ -121,7 +167,6 @@ class FloatingWindow: UIWindow {
         windowLevel = .normal + 1
         floatingVC.savedWindow = self
         backgroundColor = .clear
-        isUserInteractionEnabled = false
     }
     
     func persistAndShow() {
@@ -133,9 +178,12 @@ class FloatingWindow: UIWindow {
         floatingVC.savedWindow = nil
     }
     
-    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-        
-        return super.hitTest(point, with: event)
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        if floatingVC.presentedViewController == nil {
+            return floatingVC.button.point(inside: convert(point, to: floatingVC.button), with: event)
+        } else {
+            return super.point(inside: point, with: event)
+        }
     }
     
 }
