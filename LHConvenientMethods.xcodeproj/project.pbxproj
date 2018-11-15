@@ -22,7 +22,6 @@
 		716B021D2188366D0030C963 /* UIPopoverController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716B021C2188366D0030C963 /* UIPopoverController+.swift */; };
 		717BA6DA219AA2E200CCDDD9 /* Optional+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717BA6D9219AA2E200CCDDD9 /* Optional+.swift */; };
 		71BC387821940333005A7FA4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC387721940333005A7FA4 /* UIView+.swift */; };
-		71CBE678219C14490052B3B0 /* FloatingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CBE677219C14490052B3B0 /* FloatingWindow.swift */; };
 		71E06C0E2191354300394C9F /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E06C0D2191354300394C9F /* UIAlertController+.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +44,6 @@
 		716B021C2188366D0030C963 /* UIPopoverController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPopoverController+.swift"; sourceTree = "<group>"; };
 		717BA6D9219AA2E200CCDDD9 /* Optional+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+.swift"; sourceTree = "<group>"; };
 		71BC387721940333005A7FA4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
-		71CBE677219C14490052B3B0 /* FloatingWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWindow.swift; sourceTree = "<group>"; };
 		71E06C0D2191354300394C9F /* UIAlertController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +81,6 @@
 				7146A6032181CB82009F7F1F /* UIWindow+.swift */,
 				713B0E902194B920001B7025 /* Declarative.swift */,
 				71BC387721940333005A7FA4 /* UIView+.swift */,
-				71CBE677219C14490052B3B0 /* FloatingWindow.swift */,
 				713047C92190A0D50066F7B1 /* UIApplication+.swift */,
 				71E06C0D2191354300394C9F /* UIAlertController+.swift */,
 				71129317218EE29400FAE813 /* UIScrollView+.swift */,
@@ -191,7 +188,6 @@
 				71129318218EE29400FAE813 /* UIScrollView+.swift in Sources */,
 				7153444921868B9100EE8AC0 /* CoreGraphics+.swift in Sources */,
 				713B0E912194B920001B7025 /* Declarative.swift in Sources */,
-				71CBE678219C14490052B3B0 /* FloatingWindow.swift in Sources */,
 				717BA6DA219AA2E200CCDDD9 /* Optional+.swift in Sources */,
 				716B021D2188366D0030C963 /* UIPopoverController+.swift in Sources */,
 				7146A60D2181CB84009F7F1F /* UICollectionViewCell+.swift in Sources */,
