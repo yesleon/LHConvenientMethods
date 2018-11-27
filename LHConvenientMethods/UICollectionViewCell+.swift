@@ -12,7 +12,7 @@ extension UICollectionViewCell {
     
     public func performAction(_ action: Selector, withSender sender: Any?) {
         guard let collectionView = superview as? UICollectionView else { return }
-        let indexPath = collectionView.indexPath(for: self)!
+        guard let indexPath = collectionView.indexPath(for: self) else { return }
         collectionView.delegate?.collectionView?(collectionView, performAction: action, forItemAt: indexPath, withSender: sender)
     }
     

@@ -6,7 +6,8 @@
 //  Copyright © 2018 narrativesaw. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import LHDeclarativeKit
 
 extension UIScrollView {
     

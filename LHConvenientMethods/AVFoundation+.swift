@@ -7,7 +7,7 @@
 //
 
 import AVFoundation
-
+import UIKit
 
 extension AVCaptureDevice {
     public static func defaultCamera(position: Position) throws -> AVCaptureDevice {

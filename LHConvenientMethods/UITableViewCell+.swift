@@ -12,7 +12,7 @@ extension UITableViewCell {
     
     public func performAction(_ action: Selector, withSender sender: Any?) {
         guard let tableView = superview as? UITableView else { return }
-        let indexPath = tableView.indexPath(for: self)!
+        guard let indexPath = tableView.indexPath(for: self) else { return }
         tableView.delegate?.tableView?(tableView, performAction: action, forRowAt: indexPath, withSender: sender)
     }
     

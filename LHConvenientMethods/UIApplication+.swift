@@ -6,6 +6,8 @@
 //  Copyright © 2018 narrativesaw. All rights reserved.
 //
 
+import UIKit
+
 private typealias FirstResponderReportHandler = (UIResponder) -> Void
 
 extension UIApplication {
