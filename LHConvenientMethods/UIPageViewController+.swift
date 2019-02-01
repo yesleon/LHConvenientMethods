@@ -17,6 +17,7 @@ extension UIPageViewController {
             navigationItem.setRightBarButtonItems(childVC.navigationItem.rightBarButtonItems, animated: animated)
             navigationItem.titleView = childVC.navigationItem.titleView
             navigationItem.title = childVC.navigationItem.title
+            navigationItem.leftItemsSupplementBackButton = childVC.navigationItem.leftItemsSupplementBackButton
         }
     }
     

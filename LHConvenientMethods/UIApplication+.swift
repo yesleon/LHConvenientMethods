@@ -8,35 +8,36 @@
 
 import UIKit
 
-private typealias FirstResponderReportHandler = (UIResponder) -> Void
-
 extension UIApplication {
     
     public var firstResponder: UIResponder? {
         var firstResponder: UIResponder?
-        let reportHandler: FirstResponderReportHandler = { responder in
+        let reportAsFirstHandler: UIResponder.ReportAsFirstHandler = { responder in
             firstResponder = responder
         }
-        sendAction(#selector(UIResponder.reportAsFirstResponder), to: nil, from: reportHandler, for: nil)
+        sendAction(#selector(UIResponder.reportAsFirst), to: nil, from: reportAsFirstHandler, for: nil)
         return firstResponder
     }
     
     public func presentAlertController(_ alertController: UIAlertController) {
-        let undoWindow = UIWindow()
-        undoWindow.backgroundColor = nil
-        undoWindow.tintColor = keyWindow?.tintColor
-        let rootVC = UIViewController()
-        undoWindow.rootViewController = rootVC
-        undoWindow.makeKeyAndVisible()
-        rootVC.present(alertController, animated: true)
+        let vc = UIViewController()
+        let window = UIWindow()
+        window.backgroundColor = nil
+        window.tintColor = keyWindow?.tintColor
+        window.windowLevel = .alert
+        window.isHidden = false
+        window.rootViewController = vc
+        vc.present(alertController, animated: true)
     }
     
 }
 
 extension UIResponder {
     
-    @objc fileprivate func reportAsFirstResponder(_ sender: Any) {
-        if let handler = sender as? FirstResponderReportHandler {
+    fileprivate typealias ReportAsFirstHandler = (UIResponder) -> Void
+    
+    @objc fileprivate func reportAsFirst(_ sender: Any) {
+        if let handler = sender as? ReportAsFirstHandler {
             handler(self)
         }
     }

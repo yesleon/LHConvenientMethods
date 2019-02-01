@@ -10,6 +10,7 @@
 
 extension Optional {
     
+    @discardableResult
     public mutating func remove() -> Wrapped? {
         let returnValue = self
         self = nil

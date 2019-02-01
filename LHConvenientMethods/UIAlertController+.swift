@@ -13,16 +13,11 @@ private let bundle = Bundle(identifier: "com.narrativesaw.LHConvenientMethods")!
 extension UIAlertController {
     
     convenience public init?(undoManager: UndoManager) {
-        guard undoManager.canUndo || undoManager.canRedo else { return nil }
-        let cancelString = NSLocalizedString("Cancel", bundle: bundle, comment: "")
-        let undoString = NSLocalizedString("Undo", bundle: bundle, comment: "")
-        let redoString = NSLocalizedString("Redo", bundle: bundle, comment: "")
-        
         self.init(title: nil, message: nil, preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: cancelString, style: .cancel)
-        let undoActionHandler: (UIAlertAction) -> Void = { action in
+        let undoAction = UIAlertAction(title: NSLocalizedString("Undo", bundle: bundle, comment: ""), style: .default) { action in
             undoManager.undo()
         }
+        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", bundle: bundle, comment: ""), style: .cancel)
         let redoActionHandler: (UIAlertAction) -> Void = { action in
             undoManager.redo()
         }
@@ -30,22 +25,32 @@ extension UIAlertController {
         case (true, false):
             addAction(cancelAction)
             title = undoManager.undoMenuItemTitle
-            addAction(.init(title: undoString, style: .default, handler: undoActionHandler))
+            addAction(undoAction)
             
         case (false, true):
             addAction(cancelAction)
             title = undoManager.redoMenuItemTitle
-            addAction(.init(title: redoString, style: .default, handler: redoActionHandler))
+            addAction(.init(title: NSLocalizedString("Redo", bundle: bundle, comment: ""), style: .default, handler: redoActionHandler))
             
         case (true, true):
             title = undoManager.undoMenuItemTitle
-            addAction(.init(title: undoString, style: .default, handler: undoActionHandler))
+            addAction(undoAction)
             addAction(.init(title: undoManager.redoMenuItemTitle, style: .default, handler: redoActionHandler))
             addAction(cancelAction)
             
         case (false, false):
-            fatalError()
+            return nil
         }
+    }
+    
+    public func present() {
+        let vc = UIViewController()
+        let window = UIWindow()
+        window.backgroundColor = nil
+        window.windowLevel = .alert
+        window.isHidden = false
+        window.rootViewController = vc
+        vc.present(self, animated: true)
     }
     
 }

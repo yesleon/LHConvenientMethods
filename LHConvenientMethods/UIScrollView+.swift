@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LHDeclarativeKit
 
 extension UIScrollView {
     
@@ -31,12 +30,10 @@ extension UIScrollView {
         let overlap = kbFrame.intersection(viewFrame)
         let contentInsets = overlap.isEmpty ? .zero : UIEdgeInsets(top: 0, left: 0, bottom: overlap.height - safeAreaInsets.bottom, right: 0)
         
-        UIView.animateObject(object: self, withDuration: 0.3, delay: 0, options: .allowUserInteraction, animations: {
-            $0.contentInset = contentInsets
-            $0.scrollIndicatorInsets = contentInsets
+        UIView.animate(withDuration: 0.3, delay: 0, options: .allowUserInteraction, animations: {
+            self.contentInset = contentInsets
+            self.scrollIndicatorInsets = contentInsets
         })
-        
-        
     }
     
 }

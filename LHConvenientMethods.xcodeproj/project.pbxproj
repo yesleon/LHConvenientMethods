@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710C42CC21B9C179002F4CB1 /* Declarative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710C42CB21B9C179002F4CB1 /* Declarative.framework */; };
 		71129318218EE29400FAE813 /* UIScrollView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71129317218EE29400FAE813 /* UIScrollView+.swift */; };
+		711BF7C421CE3D5000782D2F /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711BF7C321CE3D5000782D2F /* UICollectionView+.swift */; };
 		711EA80221998AA000DC0103 /* UIBarButtonItem+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EA80121998AA000DC0103 /* UIBarButtonItem+.swift */; };
 		713047CA2190A0D50066F7B1 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713047C92190A0D50066F7B1 /* UIApplication+.swift */; };
+		7140D28821F0D27600AF7E8C /* UIDocument+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140D28721F0D27600AF7E8C /* UIDocument+.swift */; };
 		7146A5F72181CB77009F7F1F /* LHConvenientMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 7146A5F52181CB77009F7F1F /* LHConvenientMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7146A6092181CB84009F7F1F /* UIWindow+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7146A6032181CB82009F7F1F /* UIWindow+.swift */; };
 		7146A60A2181CB84009F7F1F /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7146A6042181CB82009F7F1F /* UITableViewCell+.swift */; };
@@ -18,18 +21,22 @@
 		7146A60D2181CB84009F7F1F /* UICollectionViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7146A6072181CB84009F7F1F /* UICollectionViewCell+.swift */; };
 		7146A60E2181CB84009F7F1F /* CGImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7146A6082181CB84009F7F1F /* CGImage+.swift */; };
 		7153444921868B9100EE8AC0 /* CoreGraphics+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153444821868B9100EE8AC0 /* CoreGraphics+.swift */; };
+		716330E721AD4038004D8DE7 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716330E621AD4038004D8DE7 /* UIImage+.swift */; };
+		71673C3221E2F0F100A51BEF /* UndoManager+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71673C3121E2F0F100A51BEF /* UndoManager+.swift */; };
 		717BA6DA219AA2E200CCDDD9 /* Optional+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717BA6D9219AA2E200CCDDD9 /* Optional+.swift */; };
 		718C1A0021AD2752000DEE91 /* AVFoundation+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718C19FF21AD2752000DEE91 /* AVFoundation+.swift */; };
 		71BC387821940333005A7FA4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC387721940333005A7FA4 /* UIView+.swift */; };
 		71E06C0E2191354300394C9F /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E06C0D2191354300394C9F /* UIAlertController+.swift */; };
-		71E6921B21AD365500F37ADE /* LHDeclarativeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E6921A21AD365500F37ADE /* LHDeclarativeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		710C42CB21B9C179002F4CB1 /* Declarative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Declarative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		710F8D10218305E100E4C022 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		71129317218EE29400FAE813 /* UIScrollView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+.swift"; sourceTree = "<group>"; };
+		711BF7C321CE3D5000782D2F /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
 		711EA80121998AA000DC0103 /* UIBarButtonItem+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+.swift"; sourceTree = "<group>"; };
 		713047C92190A0D50066F7B1 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		7140D28721F0D27600AF7E8C /* UIDocument+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDocument+.swift"; sourceTree = "<group>"; };
 		7146A5F22181CB77009F7F1F /* LHConvenientMethods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LHConvenientMethods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7146A5F52181CB77009F7F1F /* LHConvenientMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHConvenientMethods.h; sourceTree = "<group>"; };
 		7146A5F62181CB77009F7F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +47,8 @@
 		7146A6072181CB84009F7F1F /* UICollectionViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+.swift"; sourceTree = "<group>"; };
 		7146A6082181CB84009F7F1F /* CGImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+.swift"; sourceTree = "<group>"; };
 		7153444821868B9100EE8AC0 /* CoreGraphics+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+.swift"; sourceTree = "<group>"; };
+		716330E621AD4038004D8DE7 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		71673C3121E2F0F100A51BEF /* UndoManager+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UndoManager+.swift"; sourceTree = "<group>"; };
 		717BA6D9219AA2E200CCDDD9 /* Optional+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+.swift"; sourceTree = "<group>"; };
 		718C19FF21AD2752000DEE91 /* AVFoundation+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVFoundation+.swift"; sourceTree = "<group>"; };
 		71BC387721940333005A7FA4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
@@ -52,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71E6921B21AD365500F37ADE /* LHDeclarativeKit.framework in Frameworks */,
+				710C42CC21B9C179002F4CB1 /* Declarative.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,16 +93,20 @@
 				71BC387721940333005A7FA4 /* UIView+.swift */,
 				713047C92190A0D50066F7B1 /* UIApplication+.swift */,
 				71E06C0D2191354300394C9F /* UIAlertController+.swift */,
+				71673C3121E2F0F100A51BEF /* UndoManager+.swift */,
 				71129317218EE29400FAE813 /* UIScrollView+.swift */,
 				7146A6062181CB83009F7F1F /* UIImageView+.swift */,
+				716330E621AD4038004D8DE7 /* UIImage+.swift */,
 				717BA6D9219AA2E200CCDDD9 /* Optional+.swift */,
 				7146A6082181CB84009F7F1F /* CGImage+.swift */,
 				711EA80121998AA000DC0103 /* UIBarButtonItem+.swift */,
+				711BF7C321CE3D5000782D2F /* UICollectionView+.swift */,
 				7153444821868B9100EE8AC0 /* CoreGraphics+.swift */,
 				7146A6072181CB84009F7F1F /* UICollectionViewCell+.swift */,
 				7146A6042181CB82009F7F1F /* UITableViewCell+.swift */,
 				7146A6052181CB83009F7F1F /* UIPageViewController+.swift */,
 				718C19FF21AD2752000DEE91 /* AVFoundation+.swift */,
+				7140D28721F0D27600AF7E8C /* UIDocument+.swift */,
 				7146A5F52181CB77009F7F1F /* LHConvenientMethods.h */,
 				7146A5F62181CB77009F7F1F /* Info.plist */,
 			);
@@ -103,6 +116,7 @@
 		71E6921921AD365500F37ADE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				710C42CB21B9C179002F4CB1 /* Declarative.framework */,
 				71E6921A21AD365500F37ADE /* LHDeclarativeKit.framework */,
 			);
 			name = Frameworks;
@@ -189,7 +203,9 @@
 			files = (
 				71BC387821940333005A7FA4 /* UIView+.swift in Sources */,
 				713047CA2190A0D50066F7B1 /* UIApplication+.swift in Sources */,
+				711BF7C421CE3D5000782D2F /* UICollectionView+.swift in Sources */,
 				7146A60C2181CB84009F7F1F /* UIImageView+.swift in Sources */,
+				7140D28821F0D27600AF7E8C /* UIDocument+.swift in Sources */,
 				7146A60E2181CB84009F7F1F /* CGImage+.swift in Sources */,
 				711EA80221998AA000DC0103 /* UIBarButtonItem+.swift in Sources */,
 				7146A6092181CB84009F7F1F /* UIWindow+.swift in Sources */,
@@ -198,7 +214,9 @@
 				71129318218EE29400FAE813 /* UIScrollView+.swift in Sources */,
 				7153444921868B9100EE8AC0 /* CoreGraphics+.swift in Sources */,
 				717BA6DA219AA2E200CCDDD9 /* Optional+.swift in Sources */,
+				71673C3221E2F0F100A51BEF /* UndoManager+.swift in Sources */,
 				7146A60D2181CB84009F7F1F /* UICollectionViewCell+.swift in Sources */,
+				716330E721AD4038004D8DE7 /* UIImage+.swift in Sources */,
 				7146A60B2181CB84009F7F1F /* UIPageViewController+.swift in Sources */,
 				71E06C0E2191354300394C9F /* UIAlertController+.swift in Sources */,
 			);
