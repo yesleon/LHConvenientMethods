@@ -13,6 +13,9 @@
 		711EA80221998AA000DC0103 /* UIBarButtonItem+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EA80121998AA000DC0103 /* UIBarButtonItem+.swift */; };
 		713047CA2190A0D50066F7B1 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713047C92190A0D50066F7B1 /* UIApplication+.swift */; };
 		7140D28821F0D27600AF7E8C /* UIDocument+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140D28721F0D27600AF7E8C /* UIDocument+.swift */; };
+		71431C1222115DDB005DA080 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71431C1122115DDB005DA080 /* CollectionViewController.swift */; };
+		71431C1422115E44005DA080 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71431C1322115E44005DA080 /* Array+.swift */; };
+		71431C1722115FA5005DA080 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71431C1622115FA4005DA080 /* UIViewController+.swift */; };
 		7146A5F72181CB77009F7F1F /* LHConvenientMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 7146A5F52181CB77009F7F1F /* LHConvenientMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7146A6092181CB84009F7F1F /* UIWindow+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7146A6032181CB82009F7F1F /* UIWindow+.swift */; };
 		7146A60A2181CB84009F7F1F /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7146A6042181CB82009F7F1F /* UITableViewCell+.swift */; };
@@ -37,6 +40,9 @@
 		711EA80121998AA000DC0103 /* UIBarButtonItem+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+.swift"; sourceTree = "<group>"; };
 		713047C92190A0D50066F7B1 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		7140D28721F0D27600AF7E8C /* UIDocument+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDocument+.swift"; sourceTree = "<group>"; };
+		71431C1122115DDB005DA080 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		71431C1322115E44005DA080 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		71431C1622115FA4005DA080 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		7146A5F22181CB77009F7F1F /* LHConvenientMethods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LHConvenientMethods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7146A5F52181CB77009F7F1F /* LHConvenientMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHConvenientMethods.h; sourceTree = "<group>"; };
 		7146A5F62181CB77009F7F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,9 +95,12 @@
 		7146A5F42181CB77009F7F1F /* LHConvenientMethods */ = {
 			isa = PBXGroup;
 			children = (
+				71431C1122115DDB005DA080 /* CollectionViewController.swift */,
+				71431C1322115E44005DA080 /* Array+.swift */,
 				7146A6032181CB82009F7F1F /* UIWindow+.swift */,
 				71BC387721940333005A7FA4 /* UIView+.swift */,
 				713047C92190A0D50066F7B1 /* UIApplication+.swift */,
+				71431C1622115FA4005DA080 /* UIViewController+.swift */,
 				71E06C0D2191354300394C9F /* UIAlertController+.swift */,
 				71673C3121E2F0F100A51BEF /* UndoManager+.swift */,
 				71129317218EE29400FAE813 /* UIScrollView+.swift */,
@@ -210,9 +219,12 @@
 				711EA80221998AA000DC0103 /* UIBarButtonItem+.swift in Sources */,
 				7146A6092181CB84009F7F1F /* UIWindow+.swift in Sources */,
 				7146A60A2181CB84009F7F1F /* UITableViewCell+.swift in Sources */,
+				71431C1422115E44005DA080 /* Array+.swift in Sources */,
 				718C1A0021AD2752000DEE91 /* AVFoundation+.swift in Sources */,
 				71129318218EE29400FAE813 /* UIScrollView+.swift in Sources */,
 				7153444921868B9100EE8AC0 /* CoreGraphics+.swift in Sources */,
+				71431C1222115DDB005DA080 /* CollectionViewController.swift in Sources */,
+				71431C1722115FA5005DA080 /* UIViewController+.swift in Sources */,
 				717BA6DA219AA2E200CCDDD9 /* Optional+.swift in Sources */,
 				71673C3221E2F0F100A51BEF /* UndoManager+.swift in Sources */,
 				7146A60D2181CB84009F7F1F /* UICollectionViewCell+.swift in Sources */,
