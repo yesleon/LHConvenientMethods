@@ -14,6 +14,7 @@ public protocol CollectionViewControllerDelegate: AnyObject {
     func collectionViewControllerDidChange<Section>(_ collectionVC: CollectionViewController<Section>)
     func collectionViewController<Section>(_ collectionVC: CollectionViewController<Section>, didSelectItemAt indexPath: IndexPath)
     func collectionViewController<Section>(_ collectionVC: CollectionViewController<Section>, shouldEditItemAt indexPath: IndexPath) -> Bool
+    func collectionViewController<Section>(_ collectionVC: CollectionViewController<Section>, dragPreviewParametersForItemAt indexPath: IndexPath) -> UIDragPreviewParameters?
 }
 
 private let cellIdentifier = "Cell"
@@ -261,6 +262,10 @@ public class CollectionViewController<Section>: UICollectionViewController, UICo
         let item = UIDragItem(itemProvider: NSItemProvider())
         item.localObject = _collection[indexPath]
         return [item]
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, dragPreviewParametersForItemAt indexPath: IndexPath) -> UIDragPreviewParameters? {
+        return delegate?.collectionViewController(self, dragPreviewParametersForItemAt: indexPath)
     }
 
     public func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate session: UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UICollectionViewDropProposal {
