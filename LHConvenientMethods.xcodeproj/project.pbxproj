@@ -39,7 +39,6 @@
 		711EA80121998AA000DC0103 /* UIBarButtonItem+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+.swift"; sourceTree = "<group>"; };
 		713047C92190A0D50066F7B1 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		7140D28721F0D27600AF7E8C /* UIDocument+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDocument+.swift"; sourceTree = "<group>"; };
-		71431C1122115DDB005DA080 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		71431C1322115E44005DA080 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
 		71431C1622115FA4005DA080 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		7146A5F22181CB77009F7F1F /* LHConvenientMethods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LHConvenientMethods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +93,6 @@
 		7146A5F42181CB77009F7F1F /* LHConvenientMethods */ = {
 			isa = PBXGroup;
 			children = (
-				71431C1122115DDB005DA080 /* CollectionViewController.swift */,
 				71431C1322115E44005DA080 /* Array+.swift */,
 				7146A6032181CB82009F7F1F /* UIWindow+.swift */,
 				71BC387721940333005A7FA4 /* UIView+.swift */,
